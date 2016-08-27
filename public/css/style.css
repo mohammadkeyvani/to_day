@@ -1,4 +1,4 @@
-*{
+html{
     direction: rtl !important;
 }
 
@@ -9,22 +9,38 @@ Follow me on Twitter @maridlcrmn
 
 
 .navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; }
-
 .navbar .navbar-collapse { position: relative; }
-.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
-
 .navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
 .navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
 .cus_nav{
-    background-color: #01579b;
+    background-color: #01299b;
     padding-bottom: 4px;
+    min-height: 45px !important;
+    box-shadow: 1px 1px 4px 1px gray;
+}
+.custom_title{
+    font-size:14pt;
+    font-family: IRAN;
+
+}
+.parent_title{
+    padding-top: 7px;
 }
 .cus_nav a{
     color: white; !important;
+    height: 45px;
+    font-family: IRAN;
+    padding-top: 12px !important;
 }
-.cus_nav a:hover{
-    color: black !important;
+.navbar-nav > li{
+    height: 45px ;
+    width: 86px;
+}
+.cus_ul > li > a:hover{
+    color: red !important;
     background-color: #ffffff !important;
+    box-shadow:  1px 1px 1px 1px gray inset;
+
 }
 .navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
 .nav-collapse>li { float: right; }
@@ -35,7 +51,52 @@ Follow me on Twitter @maridlcrmn
 @media screen and (max-width: 767px) {
     .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; }
 
-    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse { margin: 8px auto; padding: 0; }
     .navbar .nav-collapse .navbar-form { margin: 0; }
+
     .nav-collapse>li { float: none; }
 }
+.cus_ul{
+    margin-right: -65px;
+}
+/* end nav*/
+
+/* section under nav*/
+.under_nav{
+
+    min-height: 45px;
+    background-color: white;
+    box-shadow: 0 0 1px 1px inset
+}
+.custom_under_title > li {
+    font-size:10pt;
+    font-family: IRAN;
+    width: 86px;
+
+}
+.custom_under_title{
+    margin-right: -40px;
+}
+.custom_under_title > li > a{
+    color: #000000 !important;
+    padding-top: 9px !important;
+    height: 45px;
+}
+.custom_under_title > li > a:hover{
+    background-color: transparent;
+    border-bottom:  2px solid red;
+    color: red !important;
+
+
+}
+
+.rect{
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 5px solid red;
+    margin-top: 38px;
+    margin-right: -3px;
+}
+/* end section under nav*/

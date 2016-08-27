@@ -4,6 +4,4 @@
 home
 @stop
 @section("content")
-hello
-
 @stop
